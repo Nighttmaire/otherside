@@ -1,0 +1,169 @@
+<body style="background: linear-gradient(179deg, #000 0%, #fff 100%);">
+<html>
+<head>
+<style>form { 
+margin: 0 auto; 
+width:250px;
+color: #FFFFFF;
+text-align: center;
+}
+
+p {
+  color: #FFFFFF
+}
+
+h2 {
+  text-align: center;
+  color: #d9fff9;
+  font-size: 40px;
+  letter-spacing: 6px;
+  font-weight: 300;
+  margin: 0;
+  line-height: 0;
+  animation: glitch1 0.5s infinite;
+}
+
+h2:nth-child(2) {
+  color: #0ef0e1;
+  animation: glitch2 1.0s infinite;
+}
+
+h2:nth-child(3) {
+  color: #ff94eb;
+  animation: glitch3 1.0s infinite;
+}
+
+@keyframes glitch1 {
+  0% {
+    transform: none;
+    opacity: 1;
+  }
+  50% {
+    transform: skew(-2deg, 0.6deg);
+    opacity: 0.75;
+  }
+  100% {
+    transform: none;
+    opacity: 1;
+  }
+}
+
+@keyframes glitch2 {
+  0% {
+    transform: none;
+    opacity: 0.25;
+  }
+  50% {
+    transform: translate(-3px, -1px);
+    opacity: 0.5;
+  }
+  100% {
+    transform: none;
+    opacity: 0.25;
+  }
+  @keyframes glitch3 {
+    0% {
+      transform: none;
+      opacity: 0.25;
+    }
+    50% {
+      transform: translate(3px, 1px);
+      opacity: 0.5;
+    }
+    100% {
+      transform: none;
+      opacity: 0.25;
+    }
+  }
+}
+
+h1 {
+  text-align: center;
+  color: #d9fff9;
+  font-size: 65px;
+  letter-spacing: 6px;
+  font-weight: 300;
+  margin: 0;
+  line-height: 0;
+  animation: glitch1 0.5s infinite;
+}
+
+h1:nth-child(2) {
+  color: #0ef0e1;
+  animation: glitch2 1.0s infinite;
+}
+
+h1:nth-child(3) {
+  color: #ff94eb;
+  animation: glitch3 1.0s infinite;
+}
+
+@keyframes glitch1 {
+  0% {
+    transform: none;
+    opacity: 1;
+  }
+  50% {
+    transform: skew(-2deg, 0.6deg);
+    opacity: 0.75;
+  }
+  100% {
+    transform: none;
+    opacity: 1;
+  }
+}
+
+@keyframes glitch2 {
+  0% {
+    transform: none;
+    opacity: 0.25;
+  }
+  50% {
+    transform: translate(-3px, -1px);
+    opacity: 0.5;
+  }
+  100% {
+    transform: none;
+    opacity: 0.25;
+  }
+  @keyframes glitch3 {
+    0% {
+      transform: none;
+      opacity: 0.25;
+    }
+    50% {
+      transform: translate(3px, 1px);
+      opacity: 0.5;
+    }
+    100% {
+      transform: none;
+      opacity: 0.25;
+    }
+  }
+
+</style>
+<link rel="stylesheet" href="style.css">
+</head>
+<br>
+<h1>THEUNLUCKYONE</h1>
+<br></br>
+<h2>ENPRPNE</h2>
+</br>
+
+<form>
+    <label for="pswd">CODE: </label>
+    <input type="password" id="pswd">
+    <input type="button" value="INPUT" onclick="checkPswd();" />
+</form>
+<!--Function to check password the already set password is admin-->
+<script type="text/javascript">
+    function checkPswd() {
+        var confirmPassword = "RACECAR";
+        var password = document.getElementById("pswd").value;
+        if (password == confirmPassword) {
+             window.location="video.html";
+        }
+        else{
+            alert("INCORRECT CODE");
+        }
+    }
